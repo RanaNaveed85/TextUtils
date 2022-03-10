@@ -1,0 +1,23 @@
+eardasfsafdasfdsaf<Router>
+      <Navbar title="TextUtiles" aboutText="About" mode = {mode}  toggleMode = {toggleMode} />  
+
+      <Alert alert = {alert}/>
+
+     
+     <div className="container my-3">
+          <Routes>
+            <Route exact path="/About" element={<About />}></Route>
+            <Route exact path="/" element={<TextForm  showAlert = {showAlert} heading = "Text To Analyse!" mode = {mode} />}></Route>
+          </Routes>
+        </div>
+      </Router>
+
+
+
+
+// For those who get Switch issue after December 2021 :-
+// Alternate solution :
+// 1). Uninstall Previous Version-
+// npm uninstall react-router-dom
+// 2). Install Older version-
+// npm install react-router-dom@5.0.0
